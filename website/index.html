@@ -199,6 +199,34 @@
       .header-nav-item a {
         color: white !important;
       }
+      
+      @media screen and (max-width: 1024px) {
+        .header-display-mobile {
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+          width: 100% !important;
+        }
+        .header-display-mobile .header-burger {
+          order: 3 !important;
+          margin-left: auto !important;
+        }
+        .header-display-mobile .header-actions {
+          order: 2 !important;
+        }
+        .header-display-mobile .header-title-nav-wrapper {
+          order: 1 !important;
+          text-align: left !important;
+          flex: 1 1 auto !important;
+        }
+        .header-display-mobile .header-title-text {
+          text-align: left !important;
+        }
+        .header-mobile-layout-logo-left-nav-right .header-title-nav-wrapper {
+          text-align: left !important;
+        }
+      }
     </style>
     <header data-test="header" id="header" class="
       
@@ -262,7 +290,7 @@
 }
 },
 &quot;mobileOptions&quot;: {
-&quot;layout&quot;: &quot;logoRightNavLeft&quot;,
+&quot;layout&quot;: &quot;logoLeftNavRight&quot;,
 &quot;menuIconOptions&quot;: {
 &quot;style&quot;: &quot;doubleLineHamburger&quot;,
 &quot;thickness&quot;: {
@@ -513,7 +541,7 @@
         
         
         
-         header-mobile-layout-logo-right-nav-left
+         header-mobile-layout-logo-left-nav-right
         
         
          header-layout-nav-left
